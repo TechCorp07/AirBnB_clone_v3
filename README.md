@@ -155,7 +155,7 @@ No known bugs at this time.
 
 ## Authors
 Einstein Makuyana - [Github](https://github.com/TechCorp07) / [Twitter](https://twitter.com/einsteinmakuyan)  
-Max Sibanda - [Github](https://github.com/sipambi) / [Twitter](https://twitter.com/sipambi)
+Max Sibanda - [Github](https://github.com/sipambi) / [Twitter](https://twitter.com/max_sibanda)
 
 Second part of Airbnb: Joann Vuong
 ## License
