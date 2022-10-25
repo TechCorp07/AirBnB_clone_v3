@@ -2,9 +2,9 @@
 """ handles all CRUD for cities """
 
 from api.v1.views import app_views
-from flask import jsonify, abort
+from flask import jsonify, abort, request
 from models import storage
-from models.state import State
+from models.city import City
 
 
 @app_views.route("/states/<state_id>/cities",
@@ -42,6 +42,9 @@ def delete_city(city_id):
                  methods=["POST"])
 def post_city(state_id):
     """ create a city """
+    state = storage.get("State", state_id)
+    if state is None:
+        abort(404)
     if not request.get_json():
         abort(400, "Not a JSON")
     if "name" not in request.get_json():
